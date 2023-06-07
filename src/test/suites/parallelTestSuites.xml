@@ -7,7 +7,7 @@
     </test>
     <test name="Test 2">
         <classes>
-            <class name="test.POM.UnsuccessfulLogIn"/>
+            <class name="test.POM.PurchasingProduct"/>
         </classes>
     </test>
 </suite>

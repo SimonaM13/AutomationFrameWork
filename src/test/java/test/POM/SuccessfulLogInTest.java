@@ -18,8 +18,8 @@ public class SuccessfulLogInTest extends TestUtil {
 
         LoginPage loginPage = new LoginPage(driver);
         ProductPage productPage = loginPage.successfulLoginSauceDemo(username, password);
-        Assert.assertNotNull(productPage);
-
+        WebElement titleMessage = driver.findElement(By.className("app_logo"));
+        Assert.assertTrue(titleMessage.isDisplayed());
     }
 }
 

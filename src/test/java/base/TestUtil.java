@@ -62,6 +62,13 @@ public class TestUtil {
 
         return testData;
     }
+    @DataProvider(name = "item list")
+    public Object[][] getItems(){
+        return new Object[][]{
+                {"backpack"},
+                {"fleece-jacket"}
+        };
+    }
 
     private List<String[]> readCSV(String filePath) throws IOException, CsvValidationException {
         List<String[]> data = new ArrayList<>();
